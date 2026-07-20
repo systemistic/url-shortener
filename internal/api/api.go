@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/systemistic/go-system-design/pkg/httpkit"
 	"github.com/systemistic/url-shortener/internal/analytics"
 	"github.com/systemistic/url-shortener/internal/ratelimit"
 	"github.com/systemistic/url-shortener/internal/shortener"
+	"github.com/systemistic/url-shortener/pkg/httpkit"
 )
 
 // maxBodyBytes bounds create-request bodies (URL + alias + ttl is tiny).

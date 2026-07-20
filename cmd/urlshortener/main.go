@@ -15,14 +15,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/systemistic/go-system-design/pkg/httpkit"
-	"github.com/systemistic/go-system-design/pkg/logkit"
 	"github.com/systemistic/url-shortener/internal/analytics"
 	"github.com/systemistic/url-shortener/internal/api"
 	"github.com/systemistic/url-shortener/internal/idgen"
 	"github.com/systemistic/url-shortener/internal/ratelimit"
 	"github.com/systemistic/url-shortener/internal/shortener"
 	"github.com/systemistic/url-shortener/internal/store"
+	"github.com/systemistic/url-shortener/pkg/httpkit"
+	"github.com/systemistic/url-shortener/pkg/logkit"
 )
 
 type config struct {
