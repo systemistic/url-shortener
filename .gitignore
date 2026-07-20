@@ -1,0 +1,39 @@
+# Binaries for programs and plugins
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output from Go coverage tool
+coverage.out
+coverage/
+
+# Vendor directory
+vendor/
+
+# Dependency directories
+Godeps/
+
+# Build artifacts
+dist/
+build/
+
+# Logs
+*.log
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Environment files
+.env
+.env.*.local
+
+# OS generated files
+Thumbs.db

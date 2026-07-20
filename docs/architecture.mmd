@@ -1,0 +1,10 @@
+flowchart LR
+    C[Client] --> API[API service]
+    API --> RL[Create rate limiter]
+    API --> IDG[ID generator - snowflake-lite]
+    API -->|hit| LRU[LRU cache - Redis stand-in]
+    API -->|hit| NEG[Negative cache - dead codes]
+    API -->|miss via singleflight| ST[(Store - KV/SQL)]
+    ST -->|fill| LRU
+    API -.->|async click events| AN[Analytics batcher]
+    AN -->|batched IncrClicks| ST
