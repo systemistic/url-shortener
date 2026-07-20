@@ -1,4 +1,4 @@
-# 01 — URL Shortener
+# URL Shortener
 
 Shorten long URLs to `https://sho.rt/{code}` and redirect fast at read-heavy
 scale, with per-code click statistics, optional custom aliases, and optional
