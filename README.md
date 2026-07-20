@@ -219,6 +219,6 @@ curl -s -X DELETE -o /dev/null -w '%{http_code}\n' localhost:8081/api/v1/urls/my
 Tests:
 
 ```sh
-gofmt -l systems/01-url-shortener && go vet ./systems/01-url-shortener/... \
-  && go test -race ./systems/01-url-shortener/...
+gofmt -l url-shortener && go vet ./url-shortener/... \
+  && go test -race ./url-shortener/...
 ```
